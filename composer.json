@@ -1,0 +1,49 @@
+{
+  "name": "arif-un/jcof",
+  "description": "Compress JSON in half",
+  "type": "library",
+  "keywords": ["jcof", "json-compress", "json-optimize"],
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/arif-un/jcof-php/issues",
+    "source": "https://github.com/arif-un/jcof-php"
+  },
+  "authors": [
+    {
+      "name": "Arif Uddin",
+      "email": "arifunctg@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^5.6"
+  },
+  "require-dev": {
+    "pestphp/pest": "^2.19",
+    "laravel/pint": "^1.13",
+    "squizlabs/php_codesniffer": "*",
+    "phpcompatibility/php-compatibility": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Jcof\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Jcof\\Test\\": "tests/"
+    }
+  },
+  "minimum-stability": "stable",
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "scripts": {
+    "test": "./vendor/bin/pest",
+    "style:fix": "vendor/bin/pint ./src ./tests",
+    "phpcs": "./vendor/bin/phpcs  -p ./src --standard=PHPCompatibility --runtime-set testVersion 5.6",
+    "post-install-cmd": "\"vendor/bin/phpcs\" --config-set installed_paths vendor/phpcompatibility/php-compatibility",
+    "post-update-cmd": "\"vendor/bin/phpcs\" --config-set installed_paths vendor/phpcompatibility/php-compatibility"
+  }
+}
