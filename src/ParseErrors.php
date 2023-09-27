@@ -2,7 +2,7 @@
 
 namespace Jcof;
 
-class ParseErrors extends Exception
+class ParseErrors extends \Exception
 {
     public $index;
 
