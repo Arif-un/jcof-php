@@ -4,9 +4,9 @@ namespace Jcof;
 
 class Jcof
 {
-    const B62_ALPHABET = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    private const B62_ALPHABET = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
-    const B62_ALPHABET_NUM = [
+    private const B62_ALPHABET_NUM = [
         '0' => 0,
         '1' => 1,
         '2' => 2,
