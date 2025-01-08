@@ -29,7 +29,7 @@ Programmer;"age""first-name""full-time""occupation";
 
 
 ### Install
-You can install Slugify through [Composer](https://getcomposer.org/):
+You can install Jcof through [Composer](https://getcomposer.org/):
 
 ```shell
 composer require arif-un/jcof
